@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F836EFF52DB88D1500DCF763 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F836EFF42DB88D1500DCF763 /* FirebaseAuth */; };
+		F836EFF72DB88D1500DCF763 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F836EFF62DB88D1500DCF763 /* FirebaseFirestore */; };
+		F836EFF92DB88D1500DCF763 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F836EFF82DB88D1500DCF763 /* FirebaseStorage */; };
+		F836F03C2DBC6EAF00DCF763 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F836F03B2DBC6EAF00DCF763 /* SDWebImageSwiftUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F836EFCA2DB88B4C00DCF763 /* OutfitOracle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutfitOracle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F836F0422DBCACEA00DCF763 /* Exceptions for "OutfitOracle" folder in "OutfitOracle" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F836EFC92DB88B4C00DCF763 /* OutfitOracle */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F836EFCC2DB88B4C00DCF763 /* OutfitOracle */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F836F0422DBCACEA00DCF763 /* Exceptions for "OutfitOracle" folder in "OutfitOracle" target */,
+			);
 			path = OutfitOracle;
 			sourceTree = "<group>";
 		};
@@ -23,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F836F03C2DBC6EAF00DCF763 /* SDWebImageSwiftUI in Frameworks */,
+				F836EFF52DB88D1500DCF763 /* FirebaseAuth in Frameworks */,
+				F836EFF72DB88D1500DCF763 /* FirebaseFirestore in Frameworks */,
+				F836EFF92DB88D1500DCF763 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +89,10 @@
 			);
 			name = OutfitOracle;
 			packageProductDependencies = (
+				F836EFF42DB88D1500DCF763 /* FirebaseAuth */,
+				F836EFF62DB88D1500DCF763 /* FirebaseFirestore */,
+				F836EFF82DB88D1500DCF763 /* FirebaseStorage */,
+				F836F03B2DBC6EAF00DCF763 /* SDWebImageSwiftUI */,
 			);
 			productName = OutfitOracle;
 			productReference = F836EFCA2DB88B4C00DCF763 /* OutfitOracle.app */;
@@ -94,6 +122,10 @@
 			);
 			mainGroup = F836EFC12DB88B4B00DCF763;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F836EFF32DB88D1500DCF763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F836F03A2DBC6EAF00DCF763 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F836EFCB2DB88B4C00DCF763 /* Products */;
 			projectDirPath = "";
@@ -256,9 +288,9 @@
 				DEVELOPMENT_TEAM = C35Y477M6W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OutfitOracle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -284,9 +316,9 @@
 				DEVELOPMENT_TEAM = C35Y477M6W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OutfitOracle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,6 +356,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F836EFF32DB88D1500DCF763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+		F836F03A2DBC6EAF00DCF763 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F836EFF42DB88D1500DCF763 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F836EFF32DB88D1500DCF763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F836EFF62DB88D1500DCF763 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F836EFF32DB88D1500DCF763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F836EFF82DB88D1500DCF763 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F836EFF32DB88D1500DCF763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		F836F03B2DBC6EAF00DCF763 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F836F03A2DBC6EAF00DCF763 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F836EFC22DB88B4C00DCF763 /* Project object */;
 }
